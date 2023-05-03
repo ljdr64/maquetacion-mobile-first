@@ -355,12 +355,13 @@ main {
   padding-bottom: 70px;
   text-align: center;
 }
+
 .plans--title {
   width: 90%;
   min-width: 288px;
   height: auto;
   margin: 0 auto;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 .plans--title h2 {
   padding-top: 50px;
@@ -376,14 +377,22 @@ main {
   line-height: 1.8rem;
   color: #757575;
 }
-
+.plans-container--slider {
+  display: flex;
+  height: 316px;
+  margin: 0 auto;
+  overflow-x: scroll;
+  overscroll-behavior: contain;
+  scroll-snap-type: x proximity;
+}
 .plans-container--card {
   position: relative;
+  scroll-snap-align: center;
   width: 70%;
   min-width: 230px;
   max-width: 300px;
   height: 250px;
-  margin: 50px auto 0;
+  margin: 50px 45px 0;
   padding: 0 15px;
   background-color: var(--just-white);
   border-radius: 15px;
@@ -483,4 +492,26 @@ main {
 .plan-card--ca .premium-logo--span {
   background-image: url("./assets/icons/orange-right-arrow.svg");
   filter: hue-rotate(327deg);
+}
+.grey-left-arrow {
+  position: absolute;
+  left: 15px;
+  width: 8px;
+  height: 12px;
+  margin-top: 158px;
+  background: url("./assets/icons/grey-left-arrow.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.grey-right-arrow {
+  position: absolute;
+  right: 15px;
+  width: 8px;
+  height: 12px;
+  margin-top: 158px;
+  background: url("./assets/icons/grey-right-arrow.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
