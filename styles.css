@@ -133,13 +133,44 @@ main {
   line-height: 1.6rem;
   color: #757575;
 }
-.main-currency-table,
-.main-commissions-table {
-  width: 70%;
-  min-width: 235px;
-  max-width: 500px;
+.main-tables-container {
+  display: flex;
   height: 360px;
   margin: 0 auto;
+  overflow-x: scroll;
+  overscroll-behavior: contain;
+  scroll-snap-type: x proximity;
+}
+.left-arrow {
+  position: absolute;
+  left: 15px;
+  width: 8px;
+  height: 12px;
+  margin-top: 158px;
+  background: url("./assets/icons/left-arrow.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.right-arrow {
+  position: absolute;
+  right: 15px;
+  width: 8px;
+  height: 12px;
+  margin-top: 158px;
+  background: url("./assets/icons/right-arrow.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.main-currency-table,
+.main-commissions-table {
+  scroll-snap-align: center;
+  width: 70%;
+  min-width: 234px;
+  max-width: 500px;
+  height: 360px;
+  margin: 0 43px 0;
   font-family: "Inter", sans-serif;
 }
 .main-currency-table .currency-table--title,
