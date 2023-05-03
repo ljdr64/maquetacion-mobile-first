@@ -100,7 +100,7 @@ main {
   width: 100%;
   height: auto;
   padding-top: 80px;
-  padding-bottom: 30px;
+  padding-bottom: 50px;
   text-align: center;
 }
 .main-exchange-container--title {
@@ -135,7 +135,7 @@ main {
 }
 .main-tables-container {
   display: flex;
-  height: 360px;
+  height: 380px;
   margin: 0 auto;
   overflow-x: scroll;
   overscroll-behavior: contain;
@@ -410,7 +410,7 @@ main {
 }
 .plans-container--slider {
   display: flex;
-  height: 316px;
+  height: 360px;
   margin: 0 auto;
   overflow-x: scroll;
   overscroll-behavior: contain;
@@ -421,8 +421,8 @@ main {
   scroll-snap-align: center;
   width: 70%;
   min-width: 230px;
-  max-width: 300px;
-  height: 250px;
+  max-width: 250px;
+  height: 260px;
   margin: 50px 45px 0;
   padding: 0 15px;
   background-color: var(--just-white);

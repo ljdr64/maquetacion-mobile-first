@@ -1,0 +1,30 @@
+.main-tables-container {
+  display: flex;
+  width: 930px;
+  margin: 0 auto;
+}
+.product-cards--container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 930px;
+  margin: 0 auto;
+}
+.plans-container--slider,
+.main-tables-container {
+  justify-content: center;
+  overflow-x: initial;
+  overscroll-behavior: initial;
+  scroll-snap-type: initial;
+}
+.grey-left-arrow {
+  background: initial;
+}
+.grey-right-arrow {
+  background: initial;
+}
+.left-arrow {
+  background: initial;
+}
+.right-arrow {
+  background: initial;
+}
