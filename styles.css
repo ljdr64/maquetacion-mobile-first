@@ -167,12 +167,37 @@ main {
 .main-commissions-table {
   scroll-snap-align: center;
   width: 70%;
-  min-width: 234px;
+  min-width: 250px;
   max-width: 500px;
   height: 360px;
-  margin: 0 43px 0;
+  margin: 0 35px 0;
   font-family: "Inter", sans-serif;
 }
+.bitcoin {
+  background: url("./assets/icons/coins/bitcoin.png");
+}
+.ethereum {
+  background: url("./assets/icons/coins/ethereum.png");
+}
+.ripple {
+  background: url("./assets/icons/coins/ripple.png");
+}
+.stellar {
+  background: url("./assets/icons/coins/stellar.png");
+}
+.bitcoin,
+.ethereum,
+.ripple,
+.stellar {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  margin: -4px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .main-currency-table .currency-table--title,
 .main-commissions-table .commissions-table--title {
   margin-bottom: 15px;
@@ -188,8 +213,11 @@ main {
 }
 .currency-table--container,
 .commissions-table--container {
+  text-align: left;
+  box-shadow: 5px 5px 8px var(--grey);
+  border-radius: 15px;
   width: 90%;
-  min-width: 230px;
+  min-width: 250px;
   max-width: 300px;
   height: 250px;
   margin: 0 auto;
@@ -202,11 +230,17 @@ main {
 .currency-table--container td,
 .commissions-table--container td {
   width: 50%;
+  padding-left: 15px;
   font-size: 1.6rem;
   font-weight: 500;
   line-height: 1.9rem;
   color: var(--grey);
   background-color: var(--just-white);
+}
+.currency-table--container .right,
+.commissions-table--container .right {
+  padding-left: initial;
+  text-align: center;
 }
 .currency-table--container .table__top-left,
 .commissions-table--container .table__top-left {
@@ -546,19 +580,19 @@ main {
   background-size: cover;
   background-repeat: no-repeat;
 }
-footer {
+.section-links--footer {
   display: flex;
   width: 100%;
   height: 150px;
   background-color: var(--bitcoin-orange);
 }
-footer section {
+.section-links--footer section {
   display: flex;
   width: 50%;
   justify-content: center;
   align-items: center;
 }
-footer .left ul {
+.section-links--footer .left ul {
   font-size: 1.4rem;
   font-weight: 500;
   line-height: 1.8rem;
@@ -570,4 +604,25 @@ footer .left ul {
 .left a {
   text-decoration: none;
   color: var(--just-white);
+}
+.section-autor--footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 35px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.6rem;
+  list-style: none;
+}
+.ljdr--detail span {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  margin: -3px;
+  background: url("./assets/icons/companies/linkedin.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }

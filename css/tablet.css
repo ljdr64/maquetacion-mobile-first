@@ -3,6 +3,10 @@
   width: 930px;
   margin: 0 auto;
 }
+.currency-table--container td,
+.commissions-table--container td {
+  padding-left: 20px;
+}
 .product-cards--container {
   display: flex;
   flex-wrap: wrap;
@@ -27,4 +31,12 @@
 }
 .right-arrow {
   background: initial;
+}
+.section-autor--footer {
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+}
+.ljdr--detail span {
+  margin: -2px;
 }
